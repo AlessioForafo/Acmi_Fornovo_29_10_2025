@@ -1,2 +1,6 @@
 Name: CommDrivers
 Type: CommDriversCategoryFolder
+Children:
+- File: S7TIAPROFINETDriver1/S7TIAPROFINETDriver1.yaml
+- File: S7TCPDriver1/S7TCPDriver1.yaml
+- File: CODESYSDriver1/CODESYSDriver1.yaml

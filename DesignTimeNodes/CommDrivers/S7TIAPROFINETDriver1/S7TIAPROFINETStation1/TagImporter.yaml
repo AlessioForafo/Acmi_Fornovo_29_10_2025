@@ -1,0 +1,21 @@
+Name: TagImporter
+Type: S7TiaProfinetTagImporter
+OwnerId: ns=2;g=4b48e63fb138f0cffaf2852c66ba8877
+Children:
+- Name: IgnoredPLCItems
+  Type: BaseDataVariableType
+  DataType: BaseDataType
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+- Name: IgnoredHMIItems
+  Type: BaseDataVariableType
+  DataType: NodeId
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+- Name: Mode
+  Type: BaseDataVariableType
+  DataType: ns=11;FetchProviderModes
+- Name: FilePath
+  Type: BaseDataVariableType
+  DataType: AbsoluteResourceUri
+  Value: "file:///C:/Users/AFORAFO/OneDrive - Rockwell Automation, Inc/ASEM/- Asem -/Premium HMI/Progetti PLC/Siemens/MILLENNIUM_PR160801001_00/MILLENNIUM_PR160801001_00.ap14"

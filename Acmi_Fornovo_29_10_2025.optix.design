@@ -23,15 +23,38 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 4.0
+  7:
+   Uri: 'urn:FTOptix:Core:Net'
+   Module: FTOptix.Core.Net
+   Version: 2.2
+  8:
+   Uri: 'urn:FTOptix:TagImporter'
+   Module: FTOptix.TagImporter
+   Version: 1.0
+  9:
+   Uri: 'urn:FTOptix:CODESYSTagImporter'
+   Module: FTOptix.CODESYSTagImporter
+   Version: 1.0
+  10:
+   Uri: 'urn:FTOptix:S7TagImporter'
+   Module: FTOptix.S7TagImporter
+   Version: 1.0
+  11:
+   Uri: 'urn:FTOptix:S7TiaProfinetTagImporter'
+   Module: FTOptix.S7TiaProfinetTagImporter
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 0
-  Objects: 0
+  TotalNodeCount: 13
+  Objects: 3
   ObjectTypes: 0
-  Variables: 0
+  Variables: 10
   VariableTypes: 0
   DataTypes: 0
   Methods: 0
   References: 0
   ReferenceTypes: 0
-  Files: 0
- Nodes: []
+  Files: 3
+ Nodes:
+ - File: DesignTimeNodes/CommDrivers/CODESYSDriver1/CODESYSStation1/TagImporter.yaml
+ - File: DesignTimeNodes/CommDrivers/S7TCPDriver1/S7TCPStation1/TagImporter.yaml
+ - File: DesignTimeNodes/CommDrivers/S7TIAPROFINETDriver1/S7TIAPROFINETStation1/TagImporter.yaml

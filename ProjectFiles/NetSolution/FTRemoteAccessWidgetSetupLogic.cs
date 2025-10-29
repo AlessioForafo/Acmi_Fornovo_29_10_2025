@@ -6,6 +6,11 @@ using FTOptix.System;
 using FTOptix.NetLogic;
 using FTOptix.Core;
 using FTOptix.CoreBase;
+using FTOptix.WebUI;
+using FTOptix.S7TiaProfinet;
+using FTOptix.S7TCP;
+using FTOptix.CommunicationDriver;
+using FTOptix.CODESYS;
 #endregion
 
 public class FTRemoteAccessWidgetSetupLogic : BaseNetLogic

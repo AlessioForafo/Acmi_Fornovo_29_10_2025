@@ -1,0 +1,459 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: PLC_2_511707
+  Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "IdType": 0,
+      "Id": 0,
+      "Namespace": -1
+     },
+     "Body":    {}
+    }
+   }
+  Children:
+  - Name: Calcolo_Tempo_Impulsi_DB
+    Type: TagStructure
+    DataType: Structure
+    Value: 
+     {
+      "Type": 22,
+      "Body": {
+       "TypeId": {
+        "IdType": 0,
+        "Id": 0,
+        "Namespace": -1
+       },
+       "Body":    {}
+      }
+     }
+    Children:
+    - Name: DistanzaON_sens_catena
+      Type: S7TiaProfinetTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PLC_2_511707.Blocks.Calcolo_Tempo_Impulsi_DB.DistanzaON_sens_catena"
+    - Name: DistanzaOFF_sens_catena
+      Type: S7TiaProfinetTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PLC_2_511707.Blocks.Calcolo_Tempo_Impulsi_DB.DistanzaOFF_sens_catena"
+    - Name: Distanza_denti_albero1
+      Type: S7TiaProfinetTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PLC_2_511707.Blocks.Calcolo_Tempo_Impulsi_DB.Distanza_denti_albero1"
+    - Name: Distanza_denti_albero2
+      Type: S7TiaProfinetTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PLC_2_511707.Blocks.Calcolo_Tempo_Impulsi_DB.Distanza_denti_albero2"
+    - Name: Vel_SpiraleMmin
+      Type: S7TiaProfinetTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PLC_2_511707.Blocks.Calcolo_Tempo_Impulsi_DB.Vel_SpiraleMmin"
+    - Name: Tempo_ImpulsiON_sec
+      Type: S7TiaProfinetTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PLC_2_511707.Blocks.Calcolo_Tempo_Impulsi_DB.Tempo_ImpulsiON_sec"
+    - Name: Tempo_ImpulsiOFF_sec
+      Type: S7TiaProfinetTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PLC_2_511707.Blocks.Calcolo_Tempo_Impulsi_DB.Tempo_ImpulsiOFF_sec"
+    - Name: Tempo_Impulsi_albero1
+      Type: S7TiaProfinetTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PLC_2_511707.Blocks.Calcolo_Tempo_Impulsi_DB.Tempo_Impulsi_albero1"
+    - Name: Tempo_Impulsi_albero2
+      Type: S7TiaProfinetTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PLC_2_511707.Blocks.Calcolo_Tempo_Impulsi_DB.Tempo_Impulsi_albero2"
+  - Name: G120_20G1
+    Type: TagStructure
+    DataType: Structure
+    Value: 
+     {
+      "Type": 22,
+      "Body": {
+       "TypeId": {
+        "IdType": 0,
+        "Id": 0,
+        "Namespace": -1
+       },
+       "Body":    {}
+      }
+     }
+    Children:
+    - Name: Process_Data_G120_A20G1
+      Type: TagStructure
+      DataType: Structure
+      Value: 
+       {
+        "Type": 22,
+        "Body": {
+         "TypeId": {
+          "IdType": 0,
+          "Id": 0,
+          "Namespace": -1
+         },
+         "Body":    {}
+        }
+       }
+      Children:
+      - Name: control_word
+        Type: S7TiaProfinetTag
+        DataType: UInt16
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.Process_Data_G120_A20G1.control_word"
+      - Name: setpoint
+        Type: S7TiaProfinetTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.Process_Data_G120_A20G1.setpoint"
+      - Name: W3
+        Type: S7TiaProfinetTag
+        DataType: UInt16
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.Process_Data_G120_A20G1.W3"
+      - Name: ref_quantity
+        Type: TagStructure
+        DataType: Structure
+        Value: 
+         {
+          "Type": 22,
+          "Body": {
+           "TypeId": {
+            "IdType": 0,
+            "Id": 0,
+            "Namespace": -1
+           },
+           "Body":    {}
+          }
+         }
+        Children:
+        - Name: speed_p2000
+          Type: S7TiaProfinetTag
+          DataType: Float
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "PLC_2_511707.Blocks.G120_20G1.Process_Data_G120_A20G1.ref_quantity.speed_p2000"
+        - Name: current_p2002
+          Type: S7TiaProfinetTag
+          DataType: Float
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "PLC_2_511707.Blocks.G120_20G1.Process_Data_G120_A20G1.ref_quantity.current_p2002"
+        - Name: torque_p2003
+          Type: S7TiaProfinetTag
+          DataType: Float
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "PLC_2_511707.Blocks.G120_20G1.Process_Data_G120_A20G1.ref_quantity.torque_p2003"
+      - Name: status_word
+        Type: S7TiaProfinetTag
+        DataType: UInt16
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.Process_Data_G120_A20G1.status_word"
+      - Name: actual_speed
+        Type: S7TiaProfinetTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.Process_Data_G120_A20G1.actual_speed"
+      - Name: actual_current
+        Type: S7TiaProfinetTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.Process_Data_G120_A20G1.actual_current"
+      - Name: actual_torque
+        Type: S7TiaProfinetTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.Process_Data_G120_A20G1.actual_torque"
+      - Name: actual_alarm
+        Type: S7TiaProfinetTag
+        DataType: UInt16
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.Process_Data_G120_A20G1.actual_alarm"
+      - Name: actual_fault
+        Type: S7TiaProfinetTag
+        DataType: UInt16
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.Process_Data_G120_A20G1.actual_fault"
+      - Name: Dig_Imput
+        Type: S7TiaProfinetTag
+        DataType: UInt16
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.Process_Data_G120_A20G1.Dig_Imput"
+      - Name: RETVAL_RD
+        Type: S7TiaProfinetTag
+        DataType: UInt16
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.Process_Data_G120_A20G1.RETVAL_RD"
+      - Name: RETVAL_WR
+        Type: S7TiaProfinetTag
+        DataType: UInt16
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.Process_Data_G120_A20G1.RETVAL_WR"
+    - Name: sempre
+      Type: TagStructure
+      DataType: Structure
+      Value: 
+       {
+        "Type": 22,
+        "Body": {
+         "TypeId": {
+          "IdType": 0,
+          "Id": 0,
+          "Namespace": -1
+         },
+         "Body":    {}
+        }
+       }
+      Children:
+      - Name: vel1
+        Type: S7TiaProfinetTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.sempre.vel1"
+      - Name: vel2
+        Type: S7TiaProfinetTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.sempre.vel2"
+      - Name: vel3
+        Type: S7TiaProfinetTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.sempre.vel3"
+      - Name: vel4
+        Type: S7TiaProfinetTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.sempre.vel4"
+      - Name: b1
+        Type: S7TiaProfinetTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.sempre.b1"
+      - Name: b2
+        Type: S7TiaProfinetTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.sempre.b2"
+      - Name: b3
+        Type: S7TiaProfinetTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.sempre.b3"
+      - Name: O1
+        Type: S7TiaProfinetTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.sempre.O1"
+      - Name: M1
+        Type: S7TiaProfinetTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.sempre.M1"
+      - Name: app1
+        Type: S7TiaProfinetTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.sempre.app1"
+      - Name: app2
+        Type: S7TiaProfinetTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.sempre.app2"
+      - Name: app3
+        Type: S7TiaProfinetTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PLC_2_511707.Blocks.G120_20G1.sempre.app3"
+      - Name: cont
+        Type: TagStructure
+        DataType: Structure
+        Value: 
+         {
+          "Type": 22,
+          "Body": {
+           "TypeId": {
+            "IdType": 0,
+            "Id": 0,
+            "Namespace": -1
+           },
+           "Body":    {}
+          }
+         }
+        Children:
+        - Name: aa
+          Type: S7TiaProfinetTag
+          DataType: Int32
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "PLC_2_511707.Blocks.G120_20G1.sempre.cont.aa"
+        - Name: bb
+          Type: S7TiaProfinetTag
+          DataType: Int32
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "PLC_2_511707.Blocks.G120_20G1.sempre.cont.bb"
+        - Name: cc
+          Type: S7TiaProfinetTag
+          DataType: Int32
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "PLC_2_511707.Blocks.G120_20G1.sempre.cont.cc"
+        - Name: impo
+          Type: S7TiaProfinetTag
+          DataType: Int32
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "PLC_2_511707.Blocks.G120_20G1.sempre.cont.impo"
+        - Name: k1
+          Type: S7TiaProfinetTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "PLC_2_511707.Blocks.G120_20G1.sempre.cont.k1"
+        - Name: k2
+          Type: S7TiaProfinetTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "PLC_2_511707.Blocks.G120_20G1.sempre.cont.k2"
+        - Name: k3
+          Type: S7TiaProfinetTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "PLC_2_511707.Blocks.G120_20G1.sempre.cont.k3"

@@ -1,0 +1,10 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: S7TCPTag1
+  Type: S7TCPTag
+  DataType: Int32
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea

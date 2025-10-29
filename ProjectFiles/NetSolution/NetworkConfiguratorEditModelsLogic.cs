@@ -5,6 +5,11 @@ using FTOptix.NetLogic;
 using System.Linq;
 using FTOptix.UI;
 using FTOptix.SerialPort;
+using FTOptix.WebUI;
+using FTOptix.S7TiaProfinet;
+using FTOptix.S7TCP;
+using FTOptix.CommunicationDriver;
+using FTOptix.CODESYS;
 #endregion
 
 public class NetworkConfiguratorEditModelsLogic : BaseNetLogic

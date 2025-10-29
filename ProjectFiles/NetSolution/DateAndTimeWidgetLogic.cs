@@ -7,6 +7,11 @@ using FTOptix.UI;
 using System;
 using System.Collections.Generic;
 using UAManagedCore;
+using FTOptix.WebUI;
+using FTOptix.S7TiaProfinet;
+using FTOptix.S7TCP;
+using FTOptix.CommunicationDriver;
+using FTOptix.CODESYS;
 #endregion
 
 public class DateAndTimeWidgetLogic : BaseNetLogic
