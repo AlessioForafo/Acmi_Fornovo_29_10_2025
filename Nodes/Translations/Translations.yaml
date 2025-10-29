@@ -9,7 +9,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [66,2],
+    "Dimensions": [80,2],
     "Body": [
      "","en-US",
      "Reboot","Reboot",
@@ -76,6 +76,20 @@ Children:
      "AllowUserToConnect","Allow user \"{0}\" from IP address {1} to connect?",
      "RegisterToDomainDeviceID","Device ID:",
      "PLCaddress","PLC address",
-     "PLC","Auto (PLC)"
+     "PLC","Auto (PLC)",
+     "Timestamp","Timestamp",
+     "TimedShelve","Timed Shelve",
+     "Acknowledge","Acknowledge",
+     "Acknowledge All","Acknowledge All",
+     "Active","Active",
+     "Confirm","Confirm",
+     "OneShotShelve","One-Shot Shelve",
+     "Confirm All","Confirm All",
+     "SourceName","Source Variable",
+     "Message","Message",
+     "Acked","Acked",
+     "Confirmed","Confirmed",
+     "Severity","Severity",
+     "Vector array","Vector array"
     ]
    }

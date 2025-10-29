@@ -11,6 +11,10 @@ using FTOptix.S7TiaProfinet;
 using FTOptix.S7TCP;
 using FTOptix.CommunicationDriver;
 using FTOptix.CODESYS;
+using FTOptix.Alarm;
+using FTOptix.EventLogger;
+using FTOptix.Store;
+using FTOptix.SQLiteStore;
 #endregion
 
 public class NetworkInterfacesEditModelToSystemWriterLogic : BaseNetLogic

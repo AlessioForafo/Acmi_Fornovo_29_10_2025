@@ -113,16 +113,48 @@ Project:
    Uri: 'urn:FTOptix:S7TiaProfinet:Net'
    Module: FTOptix.S7TiaProfinet.Net
    Version: 1.1
+  29:
+   Uri: 'urn:FTOptix:Alarm'
+   Module: FTOptix.Alarm
+   Version: 6.0
+  30:
+   Uri: 'urn:FTOptix:Alarm:Net'
+   Module: FTOptix.Alarm.Net
+   Version: 1.2
+  31:
+   Uri: 'urn:FTOptix:EventLogger'
+   Module: FTOptix.EventLogger
+   Version: 2.0
+  32:
+   Uri: 'urn:FTOptix:EventLogger:Net'
+   Module: FTOptix.EventLogger.Net
+   Version: 1.0
+  33:
+   Uri: 'urn:FTOptix:Store'
+   Module: FTOptix.Store
+   Version: 1.0
+  34:
+   Uri: 'urn:FTOptix:Store:Net'
+   Module: FTOptix.Store.Net
+   Version: 1.0
+  35:
+   Uri: 'urn:FTOptix:SQLiteStore'
+   Module: FTOptix.SQLiteStore
+   Version: 1.0
+  36:
+   Uri: 'urn:FTOptix:SQLiteStore:Net'
+   Module: FTOptix.SQLiteStore.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 10077
-  Objects: 949
-  ObjectTypes: 30
-  Variables: 9086
+  TotalNodeCount: 11116
+  Objects: 1139
+  ObjectTypes: 37
+  Variables: 9922
   VariableTypes: 0
   DataTypes: 1
-  Methods: 11
-  References: 49
+  Methods: 17
+  References: 230
   ReferenceTypes: 0
-  Files: 49
+  Files: 51
  Nodes:
  - File: Nodes/Acmi_Fornovo_29_10_2025.yaml

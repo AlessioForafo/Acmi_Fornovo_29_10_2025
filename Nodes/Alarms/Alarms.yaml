@@ -1,3 +1,319 @@
 Name: Alarms
 Id: g=3293e7cd8de0bb06cc725e017a984470
 Type: AlarmsCategoryFolder
+Children:
+- Name: DigitalAlarm1
+  Id: g=035c479dc54be13e67c61a223c7571bf
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=bd5a7196f9f24fdf74685e0eb91a5453
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=19aa68381aa30608980151f078d4572e
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=180da4b5db8652b2c5bb46961e162e4c
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Allarmi[0]"
+      Children:
+      - Name: Mode
+        Id: g=20d6ee45d5767771da7a0fbe2cbea5c4
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=409be15c414490d651cec92fb5d5fa5d
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=29;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=058552b873eb360248428db878409338
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarme messaggio 0"}
+- Name: DigitalAlarm2
+  Id: g=7f45b2abad91649773660d896bad056b
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=b16b7011f4e6e09aadece8563bd892f5
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=0a92b442457f5ec3b0f01308ba0fa98b
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=baf6f44d5cc61bf0de861f607d0d6510
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Allarmi[1]"
+      Children:
+      - Name: Mode
+        Id: g=391c78b1fc909c1cd04b100de355fea3
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=44d475fc58156d578f3d2d12e69aaa98
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=29;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=b72e8dcd336f132ea462f146f2e57ec9
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarme messaggio 1"}
+  - Name: AutoAcknowledge
+    Id: g=3d6cb2f7c5d3475e92c2715a081a3eb7
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Id: g=c068ff1786fa8c81c62a4dadb257257d
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Severity
+    Id: g=4eb852610981295b1166dbbce575a457
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+- Name: ImportAndExportAlarms
+  Id: g=a1c6c9927177b3043e51f29e0b1b87a9
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Id: g=d891f0811a4576c7ad2e71c3e8a896a9
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: ImportAlarms
+    Id: g=8591ac0d8700f0f2fee7900b4eca69de
+  - Class: Method
+    Name: ExportAlarms
+    Id: g=a4f0968edf1f1a929e9e0a6999251e5f
+  - Name: CSVPath
+    Id: g=c16cd42a2cfafc9e597f1fccfeb97e33
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///C:/Temp"
+  - Name: CharacterSeparator
+    Id: g=e7f8c70516e1a616a55cd0178d53f8a4
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ";"
+  - Name: WrapFields
+    Id: g=cae3b61192f569851f1458219bc677f1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: ns=7;LibraryReference
+    Id: g=bd2174020e2d84fecb76d0e8aa473c9b
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 7
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "a6ee1600e16a9f4277b3724d54711be5",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+- Name: AcmiDigitalAlarm
+  Id: g=52b87c2e37e04cc088656652c205a9aa
+  Supertype: OffNormalAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=29;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=9937af195ca11de02828315f94765d3c
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=dbaaf1925a5ec565f2c32fafe559e3d1
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: g=ae4883f6ae7395870cc0dcbaf7096e91
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Rimedio
+    Id: g=4375149bd22cbb15e6ce33ea5727e471
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"0"}
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=fa954fa8f7449cf7a50beca38feef09b
+- Name: AcmiDigitalAlarm1
+  Id: g=c93aec11806e4fad4f7f3c8d56d44c1a
+  Type: AcmiDigitalAlarm
+  Children:
+  - Class: Reference
+    Target: ns=29;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=4aa1ae2e87ac4b82d5fc7108c0e93adc
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=76ed5d90909a68ad31ddfc22caba8c75
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: g=f4477c56ce8e9d3c233393dabe3b175a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Rimedio
+    Id: g=b972cce88b3fe2edd0d6ed8ef7a4d021
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Ciao\nhgqxpojw2o\nxuwobxw2nxb"}
+- File: AllarmiGenerati/AllarmiGenerati.yaml

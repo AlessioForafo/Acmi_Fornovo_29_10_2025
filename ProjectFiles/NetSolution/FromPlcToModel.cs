@@ -7,6 +7,10 @@ using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using System.Linq;
 using UAManagedCore;
+using FTOptix.Alarm;
+using FTOptix.EventLogger;
+using FTOptix.Store;
+using FTOptix.SQLiteStore;
 
 #endregion
 
