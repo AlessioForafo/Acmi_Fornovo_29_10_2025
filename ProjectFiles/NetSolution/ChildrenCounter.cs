@@ -3,6 +3,7 @@ using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using UAManagedCore;
 using FTOptix.OPCUAServer;
+using FTOptix.DataLogger;
 #endregion
 
 public class ChildrenCounter : BaseNetLogic

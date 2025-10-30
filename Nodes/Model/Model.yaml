@@ -224,3 +224,6 @@ Children:
 - Name: LogoutPLC
   Type: BaseDataVariableType
   DataType: Boolean
+- Name: VarTest
+  Type: BaseDataVariableType
+  DataType: Int32

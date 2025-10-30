@@ -10,6 +10,7 @@ using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.NetLogic;
 using FTOptix.Core;
 using FTOptix.Recipe;
+using FTOptix.DataLogger;
 #endregion
 
 public class ImportAndExportTranslations : BaseNetLogic

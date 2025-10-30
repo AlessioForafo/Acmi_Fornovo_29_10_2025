@@ -61,6 +61,44 @@ Children:
         Type: BaseDataVariableType
         DataType: UInt32
         Value: 10000
+    - Name: DataLogger1
+      Id: g=6982c1dfab73e2053f67048fee59d257
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=33;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=33;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=33;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=33;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Sine
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Cosine
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ramp
+          Type: StoreColumn
+          DataType: Int32
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 5000
   - Class: Reference
     Target: ns=35;i=30
     Direction: Forward

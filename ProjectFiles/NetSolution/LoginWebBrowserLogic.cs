@@ -12,6 +12,7 @@ using FTOptix.Core;
 using System.Text.RegularExpressions;
 using System.Security.Cryptography;
 using System.Text;
+using FTOptix.DataLogger;
 #endregion
 
 public class LoginWebBrowserLogic : BaseNetLogic

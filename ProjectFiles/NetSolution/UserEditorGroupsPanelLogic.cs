@@ -6,6 +6,7 @@ using UAManagedCore;
 using FTOptix.OPCUAServer;
 using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.Core;
+using FTOptix.DataLogger;
 #endregion
 
 public class UserEditorGroupsPanelLogic : BaseNetLogic

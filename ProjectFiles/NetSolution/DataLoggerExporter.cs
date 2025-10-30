@@ -2,21 +2,14 @@
 using System;
 using System.IO;
 using System.Text;
-using FTOptix.CoreBase;
-using FTOptix.HMIProject;
 using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.NetLogic;
-using FTOptix.EventLogger;
-using FTOptix.OPCUAServer;
-using FTOptix.UI;
 using FTOptix.Store;
-using FTOptix.SQLiteStore;
 using FTOptix.Core;
-using FTOptix.DataLogger;
+using FTOptix.HMIProject;
 #endregion
 
-public class AlarmsHistoryExporter : BaseNetLogic
+public class DataLoggerExporter : BaseNetLogic
 {
     [ExportMethod]
     public void Export()
@@ -33,7 +26,7 @@ public class AlarmsHistoryExporter : BaseNetLogic
             bool wrapFields = GetWrapFields();
             var tableObject = GetTable();
             var storeObject = GetStoreObject(tableObject);
-            var selectQuery = GetQuery();
+            var selectQuery = CreateQuery(tableObject);
 
             storeObject.Query(selectQuery, out string[] header, out object[,] resultSet);
 
@@ -49,12 +42,13 @@ public class AlarmsHistoryExporter : BaseNetLogic
                 WriteTableContent(resultSet, rowCount, columnCount, csvWriter);
             }
 
-            Log.Info("AlarmsHistoryExporter", "The alarms history has been succesfully exported to " + csvPath);
+            Log.Info("DataLoggerExporter", "The Data logger " + tableObject.BrowseName + " has been succesfully exported to " + csvPath);
         }
         catch (Exception ex)
         {
-            Log.Error("AlarmsHistoryExporter", "Unable to export data alarms history: " + ex.Message);
+            Log.Error("DataLoggerExporter", "Unable to export data logger: " + ex.Message);
         }
+
     }
 
     private void WriteTableContent(object[,] resultSet, int rowCount, int columnCount, CSVFileWriter csvWriter)
@@ -72,15 +66,16 @@ public class AlarmsHistoryExporter : BaseNetLogic
 
     private Table GetTable()
     {
-        var alarmEventLoggerVariable = LogicObject.GetVariable("Table");
-        if (alarmEventLoggerVariable == null)
+        var tableVariable = LogicObject.GetVariable("Table");
+
+        if (tableVariable == null)
             throw new Exception("Table variable not found");
 
-        NodeId tableNodeId = alarmEventLoggerVariable.Value;
+        NodeId tableNodeId = tableVariable.Value;
         if (tableNodeId == null || tableNodeId == NodeId.Empty)
             throw new Exception("Table variable is empty");
 
-        var tableNode = InformationModel.Get(tableNodeId) as Table;
+        var tableNode = InformationModel.Get<Table>(tableNodeId);
         if (tableNode == null)
             throw new Exception("The specified table node is not an instance of Store Table type");
 
@@ -108,7 +103,8 @@ public class AlarmsHistoryExporter : BaseNetLogic
             throw new Exception("FieldDelimiter variable not found");
 
         string separator = separatorVariable.Value;
-        if (separator == String.Empty)
+
+        if (separator == string.Empty)
             throw new Exception("FieldDelimiter variable is empty");
 
         if (separator.Length != 1)
@@ -129,17 +125,46 @@ public class AlarmsHistoryExporter : BaseNetLogic
         return wrapFieldsVariable.Value;
     }
 
-    private string GetQuery()
+    private string GetQueryFilter()
     {
         var queryVariable = LogicObject.GetVariable("Query");
         if (queryVariable == null)
             throw new Exception("Query variable not found");
 
         string query = queryVariable.Value;
-        if (String.IsNullOrEmpty(query))
+
+        if (string.IsNullOrEmpty(query))
             throw new Exception("Query variable is empty or not valid");
 
         return query;
+    }
+
+    private string CreateQuery(Table table)
+    {
+        var queryColumns = GetQueryColumns(table);
+        var queryFilter = GetQueryFilter();
+
+        return $"SELECT {queryColumns} FROM \"{table.BrowseName}\" WHERE {queryFilter}";
+    }
+
+    private string GetQueryColumns(Table table)
+    {
+        var tableColumns = table.Columns;
+        string columns = "";
+
+        for (int i = 0; i < tableColumns.Count; i++)
+        {
+            var columnName = tableColumns[i].BrowseName;
+            if (columnName == "Id")
+                continue;
+
+            columns += $"\"{columnName}\"";
+
+            if (i != tableColumns.Count - 1 && tableColumns[i + 1].BrowseName != "Id")
+                columns += ", ";
+        }
+
+        return columns;
     }
 
     private void ValidateTimeSlice()
@@ -154,9 +179,21 @@ public class AlarmsHistoryExporter : BaseNetLogic
         DateTime fromValue = fromVariable.Value;
         DateTime toValue = toVariable.Value;
 
+        if (fromValue <= minumumSupportedDate)
+            Log.Warning("DataLoggerExporter", "The From value is lower than the minumum supported date");
+
+        if (toValue == minimumOpcUaDate)
+            throw new Exception("The To property is not set");
+
         if (toValue < fromValue)
-            throw new Exception("Not a valid time slice. The date entered in the \"From\" property is later than the date entered in the \"To\"");
+            throw new Exception("Not a valid time slice. The date entered in the From property is later than the date entered in the To");
     }
+
+    // OPC UA DateTime minimum value is "1601-01-01T00:00:00.000Z". It indicates that the value was not set.
+    private readonly DateTime minimumOpcUaDate = new DateTime(1601, 01, 01, 0, 0, 0, 0, DateTimeKind.Utc);
+
+    // An intersection of the minumum supported Timestamps by Sqlserver (1/1/1753), MYSQL (1/1/1970) and an Embedded database
+    private readonly DateTime minumumSupportedDate = new DateTime(1970, 01, 01, 0, 0, 0, 0, DateTimeKind.Utc);
 
     #region CSVFileWriter
     private class CSVFileWriter : IDisposable

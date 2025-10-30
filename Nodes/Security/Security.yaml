@@ -55,3 +55,17 @@ Children:
   - Class: Reference
     Type: HasGroup
     Target: g=ce1701557ca76286f73c5d445d9c9cb3
+- Name: ACMIUser
+  Id: g=970b31f4f121f3a03d3f4c1a220cc8b9
+  Supertype: UserType
+  Children:
+  - Name: Cod_RFID
+    Id: g=462e3025b3717a62a59315582958b0a9
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Psw_Chiaro
+    Id: g=bec5b528d97f36219a7cbcbc2a21e086
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"

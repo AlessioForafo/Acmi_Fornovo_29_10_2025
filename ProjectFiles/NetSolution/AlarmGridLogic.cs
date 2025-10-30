@@ -5,6 +5,7 @@ using FTOptix.UI;
 using FTOptix.EventLogger;
 using FTOptix.Store;
 using FTOptix.SQLiteStore;
+using FTOptix.DataLogger;
 #endregion
 
 public class AlarmGridLogic : BaseNetLogic
