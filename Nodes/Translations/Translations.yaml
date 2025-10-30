@@ -2,6 +2,7 @@ Name: Translations
 Type: TranslationsCategoryFolder
 Children:
 - Name: LocalizationDictionary1
+  Id: g=c6f709d32436a7f378b733449426a28c
   Type: LocalizationDictionary
   DataType: String
   ValueRank: OneOrMoreDimensions
@@ -9,87 +10,185 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [80,2],
+    "Dimensions": [130,4],
     "Body": [
-     "","en-US",
-     "Reboot","Reboot",
-     "Mask","Mask",
-     "Apply","Apply",
-     "RebootToCommitChanges","Reboot to commit changes",
-     "DHCPClientEnabled","DHCP client enabled",
-     "DNS2","DNS 2",
-     "IPAddress","IP address",
-     "DNS1","DNS 1",
-     "LAN","LAN",
-     "WAN","WAN",
-     "DefaultGateway","Default gateway",
-     "ApplicationName","Application name",
-     "DeviceName","Device name",
-     "ProductName","Product name",
-     "OS ","OS ",
-     "DisableApplicationAndFirmwareUpdates","Disable application and firmware updates",
-     "LastDeploy","Last deploy",
-     "CatalogNumber","Catalog #",
-     "CPUTemperature","CPU temperature",
-     "CPUUtilization","CPU utilization",
-     "LastReboot","Last reboot",
-     "FreeMemory","Free memory",
-     "ProductInformation","Product Information",
-     "UsedMemory","Used memory",
-     "Diagnostics","Diagnostics",
-     "PowerOnTime","Power on time",
-     "FreeStorage","Free storage",
-     "UsedStorage","Used storage",
-     "Configuration","Configuration",
-     "FTOptixStudio","FT Optix Studio",
-     "OptixPanelFirmware","OptixPanel firmware",
-     "SystemManager","System Manager",
-     "Versions","Versions",
-     "TimeSynchronizationMode","Synchronization mode",
-     "AutoMode","Auto (Remote NTP server)",
-     "ManualMode","Manual",
-     "TimeZone","Time zone",
-     "RemoteNTPServer","Remote NTP server",
-     "LocalNTPServerInterfaces","Local NTP server interfaces",
-     "DateAndTime","Date and time",
-     "AssistancePanelTitle","Assistance",
-     "FTRemoteAccessConnection","FT Remote Access connection",
-     "RegisterToDomainString","To connect, add your device in FT Remote Access.",
-     "Connecting"," Connecting",
-     "Name","Name",
-     "RegisterToDomainPassword","Password:",
-     "RequestsUnavailable","Assistance requests are unavailable for this device while disconnected.",
-     "Disconnected","Disconnected ",
-     "Description","Description",
-     "Yes","Yes",
-     "ContactInformation","Contact information",
-     "No","No",
-     "RequestAssistance","Request Assistance ",
-     "AssistanceRequested"," Assistance Requested",
-     "FillOutFieldsMessage","Fill out all fields to submit a request.",
-     "RequestsDisabled","Assistance requests are disabled for this device. Please contact your system administrator.",
-     "ConnectionPanelTitleAsterisk","Connection *",
-     "ConnectionPanelTitle","Connection",
-     "FTRemoteAccessRuntimeVersion","FT Remote Access runtime version",
-     "RemoteConnections","Remote connections",
-     "Connected"," Connected",
-     "AllowUserToConnect","Allow user \"{0}\" from IP address {1} to connect?",
-     "RegisterToDomainDeviceID","Device ID:",
-     "PLCaddress","PLC address",
-     "PLC","Auto (PLC)",
-     "Timestamp","Timestamp",
-     "TimedShelve","Timed Shelve",
-     "Acknowledge","Acknowledge",
-     "Acknowledge All","Acknowledge All",
-     "Active","Active",
-     "Confirm","Confirm",
-     "OneShotShelve","One-Shot Shelve",
-     "Confirm All","Confirm All",
-     "SourceName","Source Variable",
-     "Message","Message",
-     "Acked","Acked",
-     "Confirmed","Confirmed",
-     "Severity","Severity",
-     "Vector array","Vector array"
+     "","en-US","it-IT","ru-RU",
+     "Reboot","Reboot","","",
+     "Mask","Mask","","",
+     "Apply","Apply","Applica","",
+     "RebootToCommitChanges","Reboot to commit changes","","",
+     "DHCPClientEnabled","DHCP client enabled","","",
+     "DNS2","DNS 2","","",
+     "IPAddress","IP address","","",
+     "DNS1","DNS 1","","",
+     "LAN","LAN","","",
+     "WAN","WAN","","",
+     "DefaultGateway","Default gateway","","",
+     "ApplicationName","Application name","","",
+     "DeviceName","Device name","","",
+     "ProductName","Product name","","",
+     "OS ","OS ","","",
+     "DisableApplicationAndFirmwareUpdates","Disable application and firmware updates","","",
+     "LastDeploy","Last deploy","","",
+     "CatalogNumber","Catalog #","","",
+     "CPUTemperature","CPU temperature","","",
+     "CPUUtilization","CPU utilization","","",
+     "LastReboot","Last reboot","","",
+     "FreeMemory","Free memory","","",
+     "ProductInformation","Product Information","","",
+     "UsedMemory","Used memory","","",
+     "Diagnostics","Diagnostics","","",
+     "PowerOnTime","Power on time","","",
+     "FreeStorage","Free storage","","",
+     "UsedStorage","Used storage","","",
+     "Configuration","Configuration","","",
+     "FTOptixStudio","FT Optix Studio","","",
+     "OptixPanelFirmware","OptixPanel firmware","","",
+     "SystemManager","System Manager","","",
+     "Versions","Versions","","",
+     "TimeSynchronizationMode","Synchronization mode","","",
+     "AutoMode","Auto (Remote NTP server)","","",
+     "ManualMode","Manual","","",
+     "TimeZone","Time zone","","",
+     "RemoteNTPServer","Remote NTP server","","",
+     "LocalNTPServerInterfaces","Local NTP server interfaces","","",
+     "DateAndTime","Date and time","","",
+     "AssistancePanelTitle","Assistance","","",
+     "FTRemoteAccessConnection","FT Remote Access connection","","",
+     "RegisterToDomainString","To connect, add your device in FT Remote Access.","","",
+     "Connecting"," Connecting","","",
+     "Name","Name","Nome","",
+     "RegisterToDomainPassword","Password:","","",
+     "RequestsUnavailable","Assistance requests are unavailable for this device while disconnected.","","",
+     "Disconnected","Disconnected ","","",
+     "Description","Description","","",
+     "Yes","Yes","","",
+     "ContactInformation","Contact information","","",
+     "No","No","","",
+     "RequestAssistance","Request Assistance ","","",
+     "AssistanceRequested"," Assistance Requested","","",
+     "FillOutFieldsMessage","Fill out all fields to submit a request.","","",
+     "RequestsDisabled","Assistance requests are disabled for this device. Please contact your system administrator.","","",
+     "ConnectionPanelTitleAsterisk","Connection *","","",
+     "ConnectionPanelTitle","Connection","","",
+     "FTRemoteAccessRuntimeVersion","FT Remote Access runtime version","","",
+     "RemoteConnections","Remote connections","","",
+     "Connected"," Connected","","",
+     "AllowUserToConnect","\"Allow user \"\"{0}\"\" from IP address {1} to connect?\"","","",
+     "RegisterToDomainDeviceID","Device ID:","","",
+     "PLCaddress","PLC address","","",
+     "PLC","Auto (PLC)","","",
+     "Timestamp","Timestamp","","",
+     "TimedShelve","Timed Shelve","","",
+     "Acknowledge","Acknowledge","","",
+     "Acknowledge All","Acknowledge All","","",
+     "Active","Active","","",
+     "Confirm","Confirm","","",
+     "OneShotShelve","One-Shot Shelve","","",
+     "Confirm All","Confirm All","","",
+     "SourceName","Source Variable","","",
+     "Message","Message","","",
+     "Acked","Acked","","",
+     "Confirmed","Confirmed","","",
+     "Severity","Severity","","",
+     "Vector array","Vector array","","",
+     "ciao","hello","ciao","привет",
+     "Alarme messaggio 0","Alarme messaggio 0","Messaggio allarme 0 Ita","Russo 1",
+     "Alarme messaggio 1","Alarme messaggio 1","Messaggio Allarme 1 ITA","Rfusso 2",
+     "Il valore della variabile incrementa è: {#incrementa}","Increment's variable value: {#incrementa}","значение переменной приращения равно: {#incrementa}","",
+     "0","0","","",
+     "Altre pagine","Altre pagine","","",
+     "_SELECT * FROM {0:sql_identifier} WHERE Time BETWEEN {1:sql_literal} AND {2:sql_literal}","\nSELECT * FROM {0:sql_identifier} WHERE Time BETWEEN {1:sql_literal} AND {2:sql_literal}","","",
+     "/Objects/Acmi_Fornovo_29_10_2025/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/arrayMotori/{0}@NodeId","/Objects/Acmi_Fornovo_29_10_2025/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/arrayMotori/{0}@NodeId","","",
+     "<","<","","",
+     ">",">","","",
+     "AcmiDigitalAlarm","AcmiDigitalAlarm","","",
+     "Button1","Button1","","",
+     "Loading","Loading","Caricamento in corso","",
+     "Old password","Old password","Vecchia password","",
+     "LoginFormPasswordExpired","Password expired","Password scaduta","",
+     "Login","Login","Login","",
+     "New password","New password","Nuova password","",
+     "Password","Password","Password","",
+     "Confirm password","Confirm password","Conferma password","",
+     "Change password","Change password","Cambia password","",
+     "Your password is expired. Please enter a new one","Your password is expired.\nPlease enter a new one.","Password scaduta.\nImmetterne una nuova.","",
+     "Current User:","Current User:","Utente corrente:","",
+     "Logout","Logout","Logout","",
+     "ChangePasswordFormSuccessMessage","Password changed successfully","Password cambiata con successo","",
+     "ChangePasswordFormWrongOldPasswordMessage","Wrong old password","Vecchia password errata","",
+     "ChangePasswordFormPasswordAlreadyUsedMessage","Password already used","Password già utilizzata","",
+     "ChangePasswordFormPasswordChangedTooRecentlyMessage","Password changed too recently","Password cambiata troppo recentemente","",
+     "ChangePasswordFormPasswordTooShortMessage","Password too short","Password troppo corta","",
+     "ChangePasswordFormUserNotFoundMessage","User not found","Utente non trovato","",
+     "ChangePasswordFormUnsupportedOperationMessage","Unsupported operation","Operazione non supportata","",
+     "ChangePasswordFormPasswordMismatchMessage","Passwords do not match","Le password non coincidono","",
+     "LoginFormLoginSuccessful","Login successful","Login riuscito","",
+     "LoginFormAuthenticationFailed","Authentication failed","Autenticazione fallita","",
+     "LoginFormInvalidAuthenticationModeForUser","Invalid authentication mode for user","Modalità di autenticazione non valida per l'utente","",
+     "Create","Create","Crea","",
+     "Groups","Groups","Gruppi","",
+     "EmptyUserList","No users in list","Nessun utente nell'elenco","",
+     "PasswordChangedTooRecently","Password changed too recently","Password cambiata troppo recentemente","",
+     "Roles","Roles","Ruoli","",
+     "Delete","Delete","Elimina","",
+     "Cancel","Cancel","Annulla","",
+     "Locale:","Locale:","Impostazioni locali:","",
+     "CannotCreateUserWithEmptyUsername","Cannot create user with empty username","Impossibile creare un utente con nome utente vuoto","",
+     "UnableToGetUsers","Unable to get users","Impossibile ottenere gli utenti","",
+     "UsernameAlreadyExists","Username already exists","Nome utente già esistente","",
+     "UserNotFound","User not found","Utente non trovato","",
+     "PasswordAlreadyUsed","Password already used in the past","Password già utilizzata in passato","",
+     "PasswordTooShort","Password too short","Password troppo corta","",
+     "UnsupportedOperation","Unsupported operation","Operazione non supportata","",
+     "ChangesAppliedSuccessfully","Changes applied successfully","Modifiche applicate correttamente",""
     ]
    }
+- Name: ImportAndExportTranslations
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: CSVPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///C:/Temp/Traduzioni.csv"
+  - Class: Method
+    Name: ExportTranslations
+  - Class: Method
+    Name: ImportTranslations
+  - Name: CharacterSeparator
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ";"
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: LocalizationDictionary
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Acmi_Fornovo_29_10_2025/Translations/LocalizationDictionary1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/LocalizationDictionary"
+  - Name: ns=7;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 7
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "e7cab90d0ab7e8b5b02218e38bca9a0e",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }

@@ -5,3 +5,53 @@ Children:
 - File: Users/Users.yaml
 - File: Groups/Groups.yaml
 - File: Roles/Roles.yaml
+- Name: ACMI
+  Id: g=df21cc889cb9a2f72726131973a95251
+  Type: UserType
+  Children:
+  - Name: Password
+    Id: g=618860d0297c08818ccee2f264d85a69
+    Type: Password
+    DataType: Password
+    ReferenceType: HasProperty
+    AccessLevel: Read
+    Children:
+    - Name: Hash
+      Id: g=f697bec0c0febd4923d8c7a3ece23c0b
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: 
+       {
+        "TypeId": {
+         "Id": 252,
+         "Namespace": 1
+        },
+        "Body": {
+         "Hash": [120,141,95,169,236,4,95,120,209,103,73,141,0,246,48,22,22,36,43,103,190,101,25,193,207,21,160,212,246,17,13,225],
+         "Salt": [217,91,150,195,4,199,235,235,58,125,37,235,156,84,218,184,197,108,191,50,165,193,235,254,68,200,231,148,142,42,55,116]
+        }
+       }
+    - Name: ChangeTimestamp
+      Id: g=f78231cc38928fe6189f8ec5dc6e2074
+      Type: PropertyType
+      DataType: UtcTime
+      AccessLevel: Read
+      Value: "2025-10-30T09:16:36.7630343"
+    - Name: History
+      Id: g=79d9613517485dafd129b01b9ab99b5a
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":252,"Namespace":1},"Body":{"Hash":[120,141,95,169,236,4,95,120,209,103,73,141,0,246,48,22,22,36,43,103,190,101,25,193,207,21,160,212,246,17,13,225],"Salt":[217,91,150,195,4,199,235,235,58,125,37,235,156,84,218,184,197,108,191,50,165,193,235,254,68,200,231,148,142,42,55,116]}}]
+  - Class: Reference
+    Type: HasGroup
+    Target: g=0614fd8a607491f0eb34f2bbd8937aab
+  - Class: Reference
+    Type: HasGroup
+    Target: g=0f1249b9f019134ab47320221dde421f
+  - Class: Reference
+    Type: HasGroup
+    Target: g=ce1701557ca76286f73c5d445d9c9cb3

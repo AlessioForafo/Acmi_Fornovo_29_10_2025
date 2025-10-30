@@ -69,7 +69,7 @@ Children:
     Id: g=058552b873eb360248428db878409338
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Alarme messaggio 0"}
+    Value: {"NamespaceIndex":18,"TextId":"Alarme messaggio 0"}
 - Name: DigitalAlarm2
   Id: g=7f45b2abad91649773660d896bad056b
   Type: OffNormalAlarmController
@@ -137,7 +137,7 @@ Children:
     Id: g=b72e8dcd336f132ea462f146f2e57ec9
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Alarme messaggio 1"}
+    Value: {"NamespaceIndex":18,"TextId":"Alarme messaggio 1"}
   - Name: AutoAcknowledge
     Id: g=3d6cb2f7c5d3475e92c2715a081a3eb7
     Type: BaseDataVariableType
@@ -256,7 +256,7 @@ Children:
     Id: g=4375149bd22cbb15e6ce33ea5727e471
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"0"}
+    Value: {"NamespaceIndex":18,"TextId":"0"}
   - Class: Reference
     Type: GeneratesEvent
     Target: g=fa954fa8f7449cf7a50beca38feef09b

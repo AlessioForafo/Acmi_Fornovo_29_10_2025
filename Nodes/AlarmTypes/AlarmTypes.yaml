@@ -4,7 +4,7 @@ Children:
 - Name: AlarmType_AcmiDigitalAlarm
   Id: g=fa954fa8f7449cf7a50beca38feef09b
   Supertype: OffNormalAlarmType
-  DisplayName: {"LocaleId":"","Text":"AcmiDigitalAlarm"}
+  DisplayName: {"NamespaceIndex":18,"TextId":"AcmiDigitalAlarm"}
   Children:
   - Name: NormalState
     Type: PropertyType
@@ -122,4 +122,4 @@ Children:
   - Name: Rimedio
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"0"}
+    Value: {"NamespaceIndex":18,"TextId":"0"}

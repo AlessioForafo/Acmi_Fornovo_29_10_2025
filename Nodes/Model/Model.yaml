@@ -203,8 +203,24 @@ Children:
     ArrayDimensions: [0]
     Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Test"},"Description":{"LocaleId":"en-US","Text":"Descizione test"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Uno"},"Description":{"LocaleId":"en-US","Text":"Uno_Descrizione"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"Due"},"Description":{"LocaleId":"en-US","Text":"Due_Descrizione"}}}]
 - Name: Allarmi
-  Id: g=2f357e5c0c59997182c1a876824e3ac2
   Type: BaseDataVariableType
   DataType: Boolean
   ValueRank: OneDimension
   ArrayDimensions: [10]
+- Name: Temperatura
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Stringa1
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "stringa 1"
+- Name: Stringa2
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"LocaleId":"en-US","Text":"stringa 2"}
+- Name: SceltaLingua
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: LogoutPLC
+  Type: BaseDataVariableType
+  DataType: Boolean

@@ -136,7 +136,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ReferenceType: HasParameter
-        Value: {"LocaleId":"en-US","Text":"\nSELECT * FROM {0:sql_identifier} WHERE Time BETWEEN {1:sql_literal} AND {2:sql_literal}"}
+        Value: {"NamespaceIndex":18,"TextId":"_SELECT * FROM {0:sql_identifier} WHERE Time BETWEEN {1:sql_literal} AND {2:sql_literal}"}
       - Name: Source0
         Type: BaseDataVariableType
         DataType: BaseDataType
